@@ -65,18 +65,18 @@ class sudokuBoard {
         var boxNum = 0;
         //var boxOrder : Array<String> = [];
 
-        for tots in 0...(n - 1) {
+        for tots in 0...(n - 1) { // x component
             
-            var tempBox : cube;
+            var newBox : cube;
             
-            for index in 0...(n - 1) {
+            for index in 0...(n - 1) { // y component
                 
                 let begin = (index * n) + 1;
                 let end = (begin + n) - 1;
                 
                 boxNum += 1;
-                tempBox = cube(); // create a new cube(Box)
-                tempBox.id = "Cube " + String(boxNum);
+                newBox = cube(); // create a new cube aka (Box)
+                newBox.id = "Cube " + String(boxNum);
                 
                 let totsBegin = (tots*n) + 1;
                 let totsEnd = (totsBegin + n) - 1;
@@ -90,14 +90,15 @@ class sudokuBoard {
                         cellPosition = xAxis[i - 1] + String(yAxis[j - 1]);
                         
                         boxOrder.append(cellPosition);
-                        board[cellPosition]?.thisCube = tempBox;
-                        tempBox.cells.append(board[cellPosition]!);
+                        
+                        board[cellPosition]?.thisCube = newBox;
+                        newBox.cells.append(board[cellPosition]!);
                         
                     } // end for j
                     
                 } // end for i
                 
-            }
+            } // end for index
             
         }
 
