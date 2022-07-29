@@ -13,6 +13,7 @@ class subCube {
     var parent : String;
     var options : Set<Int>;
     var values : Set<Int>;
+    var cells: Array<cell>;
     var isEmpty : Bool;
     
     init () {
@@ -20,6 +21,11 @@ class subCube {
         parent = "";
         options = Set<Int>();
         values = Set<Int>();
+        cells = Array<cell>();
         isEmpty = true;
+    }
+    
+    func addCell(add: cell) {
+        cells.append(add);
     }
 }

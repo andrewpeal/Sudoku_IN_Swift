@@ -136,9 +136,10 @@ class sudokuBoard {
                 posCounter = 0;
             }
             
-            let cell = board[pos];              // reference to the current cell
+            let currCell = board[pos]!;              // reference to the current cell
             
-            cell?.thisSubRow = newSubRow;
+            currCell.thisSubRow = newSubRow;
+            newSubRow.addCell(add: currCell);
             posCounter += 1;
         }
         
