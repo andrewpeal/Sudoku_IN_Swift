@@ -122,6 +122,26 @@ class sudokuBoard {
                 b.siblings.insert(pos);
             }
         }
+        
+        var posCounter : Int = 0;
+        var subRowCounter : Int = 1;
+        var newSubRow = subRow();
+        newSubRow.id = "R\(subRowCounter)";
+        for pos in boxOrder {
+            
+            if (posCounter >= 3) {              // every third cell, create a new subRow
+                newSubRow = subRow();
+                subRowCounter += 1;
+                newSubRow.id = "R\(subRowCounter)";
+                posCounter = 0;
+            }
+            
+            let cell = board[pos];              // reference to the current cell
+            
+            cell?.thisSubRow = newSubRow;
+            posCounter += 1;
+        }
+        
 
         // Remove itself from the siblings list. A cell cannot be a sibling of itself
 
