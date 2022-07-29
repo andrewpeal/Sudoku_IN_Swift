@@ -177,9 +177,9 @@ class sudokuBoard {
             
             for value in options! {
                 // if value is not in row. column or box
-                inRow = thisCell!.thisRow!.contents.contains(value)
-                inCol = thisCell!.thisCol!.contents.contains(value)
-                inBox = thisCell!.thisCube!.contents.contains(value)
+                inRow = thisCell!.thisRow.contents.contains(value)
+                inCol = thisCell!.thisCol.contents.contains(value)
+                inBox = thisCell!.thisCube.contents.contains(value)
                 
                 var isValid = true
                 print ("Cell is: " + thisCell!.position)

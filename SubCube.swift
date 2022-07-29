@@ -12,6 +12,7 @@ class subCube {
     var id : String;
     var parent : String;
     var options : Set<Int>;
+    var contents : Set<Int>;
     var values : Set<Int>;
     var cells: Array<cell>;
     var isEmpty : Bool;
@@ -20,6 +21,7 @@ class subCube {
         id = "";
         parent = "";
         options = Set<Int>();
+        contents = Set<Int>();
         values = Set<Int>();
         cells = Array<cell>();
         isEmpty = true;
