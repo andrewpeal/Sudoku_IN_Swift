@@ -20,7 +20,7 @@ class extendBoard : sudokuBoard {
     
     override func fillBoard() {
         
-        var cell : cell?;
+        var thisCell : cell?;
         var options : Set<Int>?;
         var thisRow : row?;
         var thisCol : column?;
@@ -28,16 +28,16 @@ class extendBoard : sudokuBoard {
         
         for pos in boxOrder {
             
-            cell = board[pos];
+            thisCell = board[pos];
             
-            if (!cell!.isEmpty) {
+            if (!thisCell!.isEmpty) {
                 continue; // cell is already populated, continue to next iteration of the loop
             }
             
-            options = cell?.options
-            thisRow = cell?.thisRow
-            thisCol = cell?.thisCol
-            thisBox = cell?.thisCube
+            options = thisCell?.options
+            thisRow = thisCell?.thisRow
+            thisCol = thisCell?.thisCol
+            thisBox = thisCell?.thisCube
             
             var inserted : Bool = false
             var inRow : Bool;
@@ -49,7 +49,7 @@ class extendBoard : sudokuBoard {
                 dash += "-";
             }
             print(dash);
-            print("Inserting cell: \(cell!.position)");
+            print("Inserting cell: \(thisCell!.position)");
             print(dash);
             
             if(options!.isEmpty) {
@@ -101,7 +101,7 @@ class extendBoard : sudokuBoard {
             if (mustInsert.count > 0) {
                 print("Must insert is: \(mustInsert)")
                 for value in mustInsert {
-                    cell?.insert(insertValue: value);
+                    thisCell?.insert(insertValue: value);
                 }
                 continue;
             }
@@ -191,7 +191,7 @@ class extendBoard : sudokuBoard {
             for value in posSet {
                 
                 if(!inserted) {
-                    cell!.insert(insertValue: value)
+                    thisCell!.insert(insertValue: value)
                     print ("Inserting: " + String(value))
                     inserted.toggle()
                 }

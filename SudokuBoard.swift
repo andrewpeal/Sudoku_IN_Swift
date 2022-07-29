@@ -107,10 +107,10 @@ class sudokuBoard {
 
         for pos in boxOrder {
             
-            let cell = board[pos];
-            let thisRow = cell?.thisRow;
-            let thisCol = cell?.thisCol;
-            let thisCube = cell?.thisCube;
+            let currentCell = board[pos];
+            let thisRow = currentCell?.thisRow;
+            let thisCol = currentCell?.thisCol;
+            let thisCube = currentCell?.thisCube;
             
             for r in thisRow!.cells {
                 r.siblings.insert(pos);
@@ -154,7 +154,7 @@ class sudokuBoard {
     
     func fillBoard () {
         
-        var cell : cell?;
+        var thisCell : cell?;
         var options : Set<Int>?;
         var thisRow : row?;
         var thisCol : column?;
@@ -163,11 +163,11 @@ class sudokuBoard {
         
         for pos in boxOrder {
             
-            cell = board[pos]
-            options = cell?.options
-            thisRow = cell?.thisRow
-            thisCol = cell?.thisCol
-            thisBox = cell?.thisCube
+            thisCell = board[pos]
+            options = thisCell?.options
+            thisRow = thisCell?.thisRow
+            thisCol = thisCell?.thisCol
+            thisBox = thisCell?.thisCube
             //rowOptions = thisRow!.options
             
             var inserted : Bool = false
@@ -177,15 +177,15 @@ class sudokuBoard {
             
             for value in options! {
                 // if value is not in row. column or box
-                inRow = cell!.thisRow!.contents.contains(value)
-                inCol = cell!.thisCol!.contents.contains(value)
-                inBox = cell!.thisCube!.contents.contains(value)
+                inRow = thisCell!.thisRow!.contents.contains(value)
+                inCol = thisCell!.thisCol!.contents.contains(value)
+                inBox = thisCell!.thisCube!.contents.contains(value)
                 
                 var isValid = true
-                print ("Cell is: " + cell!.position)
+                print ("Cell is: " + thisCell!.position)
                 var childOptions : Set<Int>?;
                 
-                for child in cell!.siblings {
+                for child in thisCell!.siblings {
                     
                     childOptions = board[child]?.options
 
@@ -206,7 +206,7 @@ class sudokuBoard {
                     print ("Options are: \(options!)")
                     //print (options)
                     print ("Inserting: " + String(value))
-                    cell!.insert(insertValue: value)
+                    thisCell!.insert(insertValue: value)
                     
                     print ("Row Options: ")
                     print (thisRow!.getTotalOptions())
