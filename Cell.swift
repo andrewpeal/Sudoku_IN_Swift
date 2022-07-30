@@ -21,6 +21,7 @@ class cell {
     var thisSubCol : subCol
     
     init () {
+        
         thisRow = row();
         thisCol = column();
         thisCube = cube();
@@ -29,6 +30,7 @@ class cell {
     }
     
     func insert (insertValue: Int) {
+        
         self.value = insertValue;
         isEmpty = false;
         thisRow.contents.insert(value); // insert the value into the row reference
@@ -37,6 +39,9 @@ class cell {
         thisCol.options.remove(value); // remove the value from the col reference options
         thisCube.contents.insert(value); // insert the value into the cube reference
         thisCube.options.remove(value); // remove the value from the cube reference options
+        
+        thisSubRow.contents.insert(value);
+        thisSubRow.options.remove(value);
         
         updateRow();
         updateCol();
@@ -59,9 +64,13 @@ class cell {
     }
     
     func updateCube () {
+        
+        
          for cell in thisCube.cells {
              cell.options.remove(value);
+             // for each subRow in the?
          }
+        
          
     }
 }

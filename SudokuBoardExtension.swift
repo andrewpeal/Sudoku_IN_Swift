@@ -9,14 +9,7 @@ import Foundation
 
 class extendBoard : sudokuBoard {
     
-    func setCell (pos: String, value: Int) {
-        board[pos]?.insert(insertValue: value);
-    }
-    
-    func getCellCount() -> Int {
-        // not being used at the moment
-        return 0;
-    }
+
     
     override func fillBoard() {
         

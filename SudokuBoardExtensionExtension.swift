@@ -66,7 +66,7 @@ class extendExtendBoard : extendBoard {
                         boxChildOptions.insert(boxChildOpt);
                     }
                     
-                    //tempBoxSet = tempBoxSet.intersection(boxChild.options);
+                    tempBoxSet = tempBoxSet.intersection(boxChild.options);
                     //print("Box Child: \(boxChild.position) | Options : \(boxChild.options)");
                 }
             }

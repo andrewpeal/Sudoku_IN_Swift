@@ -14,8 +14,6 @@ class sudoContainer {
     var cells: Array<cell> = [];
     var id : String = "";
     
-
-    
     init () {
         //values = initVal();
         //options = initSet();
@@ -67,6 +65,5 @@ class sudoContainer {
         }
         return totalOptions;
     }
-    
     
 }

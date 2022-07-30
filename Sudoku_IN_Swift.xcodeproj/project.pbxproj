@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB4FB2512892204F006F99B1 /* SudokuBoardExtensionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4FB2502892204F006F99B1 /* SudokuBoardExtensionExtension.swift */; };
 		CB4FB25328923FE9006F99B1 /* SubCube.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4FB25228923FE9006F99B1 /* SubCube.swift */; };
 		CB535602288FC28000DDB868 /* SetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB535601288FC28000DDB868 /* SetExtension.swift */; };
-		CB8264B1288CEAB000F48E34 /* SudokuBoardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8264B0288CEAB000F48E34 /* SudokuBoardExtension.swift */; };
 		CBDB63D42883A35400AB9AA9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB63D32883A35400AB9AA9 /* main.swift */; };
 		CBDB63DB2883A39A00AB9AA9 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB63DA2883A39A00AB9AA9 /* Cell.swift */; };
 		CBDB63DD2883AC3C00AB9AA9 /* SudoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDB63DC2883AC3C00AB9AA9 /* SudoContainer.swift */; };
@@ -34,10 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CB4FB2502892204F006F99B1 /* SudokuBoardExtensionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuBoardExtensionExtension.swift; sourceTree = "<group>"; };
 		CB4FB25228923FE9006F99B1 /* SubCube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCube.swift; sourceTree = "<group>"; };
 		CB535601288FC28000DDB868 /* SetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetExtension.swift; sourceTree = "<group>"; };
-		CB8264B0288CEAB000F48E34 /* SudokuBoardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuBoardExtension.swift; sourceTree = "<group>"; };
 		CBDB63D02883A35400AB9AA9 /* Sudoku_IN_Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sudoku_IN_Swift; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBDB63D32883A35400AB9AA9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CBDB63DA2883A39A00AB9AA9 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
@@ -65,9 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				CB4FB25228923FE9006F99B1 /* SubCube.swift */,
-				CB4FB2502892204F006F99B1 /* SudokuBoardExtensionExtension.swift */,
 				CB535601288FC28000DDB868 /* SetExtension.swift */,
-				CB8264B0288CEAB000F48E34 /* SudokuBoardExtension.swift */,
 				CBDB63E82884091D00AB9AA9 /* OLD_Code */,
 				CBDB63E62883E68A00AB9AA9 /* SudokuBoard.swift */,
 				CBDB63E42883B1BE00AB9AA9 /* Cube.swift */,
@@ -158,7 +152,6 @@
 				CBDB63DF2883B14F00AB9AA9 /* Common.swift in Sources */,
 				CB4FB25328923FE9006F99B1 /* SubCube.swift in Sources */,
 				CBDB63D42883A35400AB9AA9 /* main.swift in Sources */,
-				CB4FB2512892204F006F99B1 /* SudokuBoardExtensionExtension.swift in Sources */,
 				CBDB63DB2883A39A00AB9AA9 /* Cell.swift in Sources */,
 				CBDB63E12883B17F00AB9AA9 /* Row.swift in Sources */,
 				CBDB63DD2883AC3C00AB9AA9 /* SudoContainer.swift in Sources */,
@@ -166,7 +159,6 @@
 				CBDB63E72883E68A00AB9AA9 /* SudokuBoard.swift in Sources */,
 				CBDB63E32883B1AA00AB9AA9 /* Column.swift in Sources */,
 				CB535602288FC28000DDB868 /* SetExtension.swift in Sources */,
-				CB8264B1288CEAB000F48E34 /* SudokuBoardExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 import Foundation
 
 class subCube {
-    
+
     var id : String;
     var parent : String;
     var options : Set<Int>;
@@ -20,7 +20,7 @@ class subCube {
     init () {
         id = "";
         parent = "";
-        options = Set<Int>();
+        options = initSet();
         contents = Set<Int>();
         values = Set<Int>();
         cells = Array<cell>();

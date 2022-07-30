@@ -89,5 +89,15 @@ func countBoard (board: [String: cell]) -> Int {
 
 } // end func
 
+// **** func initSet() ****
+//
+// counts the number of cells in the board that have a value
+// used mainly to check that every cell is populated with a value
 
-
+func initSet() -> Set<Int> {
+    var tempSet = Set<Int>();
+    for i in 1...9 {
+        tempSet.insert(i);
+    }
+    return tempSet;
+}
