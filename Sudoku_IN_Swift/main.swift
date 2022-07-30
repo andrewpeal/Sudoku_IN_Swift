@@ -17,8 +17,6 @@ typealias subCol = subCube;
 print("Welcome to Swiftdoku");
 
 var sudoku = sudokuBoard();
-//var sudoku = extendBoard();
-//var sudoku = extendExtendBoard();
 var newBoard = sudoku.board;
 var boxOrder = sudoku.boxOrder;
 
