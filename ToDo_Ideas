@@ -16,3 +16,15 @@
     and subCol are a subset of row and column anyway, it should only be these two
     that are required; as long as they are computed correctly to update when their
     parent row or column updates.
+
+->  Insertion Algorithm.
+        1. Add value to cell's value property.
+        2. Set cell's isEmpty property to false.
+        3. Remove value from row options.
+        4. Remove value from column options.
+        5. Remove value from subRow options.
+        6. Remove value from subCol options.
+        7. Remove value from box options.
+        8. Remove value from options of all sibling cells.
+        9. Update adjacent box' subRows.
+        10. Update adjacent boc' subCols.
