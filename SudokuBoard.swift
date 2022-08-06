@@ -31,7 +31,8 @@ class sudokuBoard {
             
             for yVal in yAxis {
                 
-                let cellPosition : String = xVal + String(yVal);
+                //let cellPosition : String = xVal + String(yVal);
+                let cellPosition : String = "\(xVal)\(yVal)";
                 newCell = cell();
                 newCell.position = cellPosition;
                 newCell.thisRow = thisRow;
@@ -123,9 +124,11 @@ class sudokuBoard {
             }
         }
         
+        var currCell : cell;
         var posCounter : Int = 0;
         var subRowCounter : Int = 1;
         var newSubRow = subRow();
+
         newSubRow.id = "R\(subRowCounter)";
         for pos in boxOrder {
             
@@ -136,7 +139,7 @@ class sudokuBoard {
                 posCounter = 0;
             }
             
-            var currCell = board[pos]!;              // reference to the current cell
+            currCell = board[pos]!;              // reference to the current cell
             
             currCell.thisSubRow = newSubRow;
             newSubRow.addCell(add: currCell);
@@ -182,9 +185,9 @@ class sudokuBoard {
             thisBox = thisCell?.thisCube
             
             var inserted : Bool = false
-            var inRow : Bool;
-            var inCol : Bool;
-            var inBox : Bool;
+            //var inRow : Bool;
+            //var inCol : Bool;
+            //var inBox : Bool;
             
             var dash : String = "";
             for _ in 0...20 {

@@ -32,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB2BC1D3289E2BE900A1BCF3 /* ToDo_Ideas */ = {isa = PBXFileReference; lastKnownFileType = text; path = ToDo_Ideas; sourceTree = "<group>"; };
 		CB4FB25228923FE9006F99B1 /* SubCube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCube.swift; sourceTree = "<group>"; };
 		CB535601288FC28000DDB868 /* SetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetExtension.swift; sourceTree = "<group>"; };
 		CBDB63D02883A35400AB9AA9 /* Sudoku_IN_Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sudoku_IN_Swift; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +61,7 @@
 		CBDB63C72883A35400AB9AA9 = {
 			isa = PBXGroup;
 			children = (
+				CB2BC1D3289E2BE900A1BCF3 /* ToDo_Ideas */,
 				CB4FB25228923FE9006F99B1 /* SubCube.swift */,
 				CB535601288FC28000DDB868 /* SetExtension.swift */,
 				CBDB63E82884091D00AB9AA9 /* OLD_Code */,

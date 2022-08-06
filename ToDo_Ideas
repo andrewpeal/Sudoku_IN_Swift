@@ -1,0 +1,18 @@
+->  Make the options variable set of each cell a computed property
+    that is computed each time it is accessed. It could compute
+    the options by intersecting the row and column sets for example.
+    This way we are not continually updating options sets for each type.
+    They are created dynamically each time we need to access them.
+
+->  Property observers could be added to properties to run some code each time
+    the property changes. For example using the didSet() property observer on
+    an options variable could then run code to update other relevant options
+    thereby cleaning up the code.
+    
+->  The box options variable could be removed from the checking process and
+    replaced with subRow and subCol options. The subRow and subCol are created
+    from the box options anyway, this way the cell options should be the intersection
+    of the row and column sets and the subRow and subCol sets. In fact since subRow
+    and subCol are a subset of row and column anyway, it should only be these two
+    that are required; as long as they are computed correctly to update when their
+    parent row or column updates.

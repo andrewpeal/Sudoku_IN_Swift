@@ -25,10 +25,12 @@ var randOrder = boxOrder.shuffled(); // random order
 
 sudoku.fillBoard();
 
+/*
 for pos in boxOrder {
     var subRow = newBoard[pos]?.thisSubRow;
     print("SubRow: \(subRow?.id) contents: \(subRow?.options)")
 }
+*/
 
 print("Number of filled cells is: \(countBoard(board: newBoard))");
 printBoard(board: newBoard);
