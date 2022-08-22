@@ -40,8 +40,11 @@ class cell {
         thisCube.contents.insert(value); // insert the value into the cube reference
         thisCube.options.remove(value); // remove the value from the cube reference options
         
+        // [#BETA] Beta code is code which is currently in use but still been
+        // tested and is not required for production build.
         thisSubRow.contents.insert(value);
         thisSubRow.options.remove(value);
+        // /[#BETA]
         
         updateRow();
         updateCol();
