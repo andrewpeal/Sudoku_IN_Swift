@@ -1,10 +1,3 @@
-//
-//  Cell.swift
-//  Sudoku_IN_Swift
-//
-//  Created by Andrew Peal on 17/7/2022.
-//
-
 import Foundation
 
 class cell {
@@ -56,24 +49,18 @@ class cell {
          for cell in thisRow.cells {
              cell.options.remove(value);
          }
-         
     }
     
     func updateCol () {
          for cell in thisCol.cells {
              cell.options.remove(value);
          }
-         
     }
     
     func updateCube () {
-        
-        
          for cell in thisCube.cells {
              cell.options.remove(value);
              // for each subRow in the?
          }
-        
-         
     }
 }
