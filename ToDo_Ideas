@@ -27,4 +27,14 @@
         7. Remove value from box options.
         8. Remove value from options of all sibling cells.
         9. Update adjacent box' subRows.
-        10. Update adjacent boc' subCols.
+        10. Update adjacent box' subCols.
+        11. subRows / subCols have a mustHave Set<Int> property
+        12. mustHave is a set of values that must be used in that subRow / subCol
+        13. mustHave can be a computed property of the cannotHave values of the other
+            subRows / subCols of the same cube.
+            
+-> Ideas
+        1.  Use property observers on interesting properties and watch as
+            each value is added one by one.
+        2.  Set up a protocol / parent method that can be used / set to
+            turn on and off the property observer properties of an object.
